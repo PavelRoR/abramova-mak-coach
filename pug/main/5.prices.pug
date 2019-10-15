@@ -1,0 +1,36 @@
+-var cost_1 = '5 000руб.';
+-var cost_2 = '8 900руб.';
+-var link_1 = '#prices';
+-var link_2 = '#prices';
+
+section#prices
+	.container
+		+gt('general-title-light','выбрать свой пакет участия')
+		.packets
+			.row
+				.col-md-6.col-sm-6
+					.packet.packet-1
+						.packet-head
+							h4.packet-head-title пакет "стандарт"
+						.packet-body
+							ul.packet-list
+								li Условный текст, который придумал дизайнер
+								li Условный текст, который придумал дизайнер
+								li Условный текст, который придумал дизайнер
+								li Условный текст, который придумал дизайнер
+						.packet-footer
+							h4.cost=cost_1
+							+b('button-cost',link_1,'_blank','Выбрать')
+				.col-md-6.col-sm-6
+					.packet.packet-2
+						.packet-head
+							h4.packet-head-title пакет "вип"
+						.packet-body
+							ul.packet-list
+								li Условный текст, который придумал дизайнер
+								li Условный текст, который придумал дизайнер
+								li Условный текст, который придумал дизайнер
+								li Условный текст, который придумал дизайнер
+						.packet-footer
+							h4.cost=cost_2
+							+b('button-cost',link_2,'_blank','Выбрать')

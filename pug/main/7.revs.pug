@@ -1,0 +1,8 @@
+section#revs
+	.container
+		+gt('general-title-light','Отзывы')
+		.owl-carousel.owl-theme#video-revs
+			each v, n in {1:'',2:'',3:'',4:'',5:''}
+				.video-wrapper.video-wrapper-revs(data-youtube=v data-img="img/revs/video_"+n+".jpg")
+					img.video-rev-img(src="img/revs/video_"+n+".jpg", alt="Видео отзыв " + n)
+		+b('','#prices','_self','хочу также')
