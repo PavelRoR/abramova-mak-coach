@@ -1,0 +1,162 @@
+AB = 'AkrobatBold', sans-serif
+Mu = 'Muller', sans-serif
+MuB = 'MullerBold', sans-serif
+ML = 'MyriadProLight', sans-serif
+
+@font-face {
+	font-family: 'AkrobatBold';
+	src: url('../fonts/AkrobatBold.eot');
+	src: url('../fonts/AkrobaBold.eot') format('embedded-opentype'),
+		url('../fonts/AkrobatBold.woff2') format('woff2'),
+		url('../fonts/AkrobatBold.woff') format('woff'),
+		url('../fonts/AkrobatBold.ttf') format('truetype'),
+		url('../fonts/AkrobatBold.svg#AkrobatBold') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Muller';
+	src: url('../fonts/Muller.eot');
+	src: url('../fonts/Muller.eot') format('embedded-opentype'),
+		url('../fonts/Muller.woff2') format('woff2'),
+		url('../fonts/Muller.woff') format('woff'),
+		url('../fonts/Muller.ttf') format('truetype'),
+		url('../fonts/Muller.svg#Muller') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MullerBold';
+	src: url('../fonts/MullerBold.eot');
+	src: url('../fonts/MullerBold.eot') format('embedded-opentype'),
+		url('../fonts/MullerBold.woff2') format('woff2'),
+		url('../fonts/MullerBold.woff') format('woff'),
+		url('../fonts/MullerBold.ttf') format('truetype'),
+		url('../fonts/MullerBold.svg#MullerBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadProLight';
+	src: url('../fonts/MyriadProLight.eot');
+	src: url('../fonts/MyriadProLight.eot') format('embedded-opentype'),
+		url('../fonts/MyriadProLight.woff2') format('woff2'),
+		url('../fonts/MyriadProLight.woff') format('woff'),
+		url('../fonts/MyriadProLight.ttf') format('truetype'),
+		url('../fonts/MyriadProLight.svg#MyriadProLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+
+@import '../css/_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-size: 17px
+	font-family: Mu
+	background-color #fff
+	color: #000
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+section
+header
+footer
+	width 100%
+	display block
+.video-wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.button
+	display block
+	margin 0 auto
+	border-radius: 35px;
+	box-shadow: 0px 4px 34.4px 5.6px rgba(39, 42, 82, 0.61);
+	width: 100%
+	max-width: 313px;
+	height: 74px;
+	line-height: 74px;
+	text-align: center
+	font-size: 20px;
+	background-color: #2B305B
+	background-image linear-gradient(0,#3a3c63,#282a52)
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	text-decoration: none
+	transition: all .5s ease
+	&:focus
+		text-decoration: none
+		color rgb(255,255,255)
+	&:hover
+		text-decoration: none
+		color rgb(255,255,255)
+		background-image linear-gradient(180deg,#3a3c63,#282a52)
+.general-title
+	text-align: center
+	font-size: 30px;
+	font-family: MuB;
+	color: rgb(17, 13, 74);
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 0.9;
+	margin-bottom: 30px
+	&-light
+		text-shadow: 0 0 18px rgb(255, 255, 255)
+
+@import 'main/1.main.styl'
+@import 'main/2.for.styl'
+@import 'main/3.plan-1.styl'
+@import 'main/3.plan-2.styl'
+@import 'main/4.learn.styl'
+@import 'main/5.prices.styl'
+@import 'main/6.coaches.styl'
+@import 'main/7.revs.styl'
+@import 'main/8.footer.styl'
+@import 'main/9.medias.styl'

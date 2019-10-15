@@ -1,0 +1,32 @@
+-var head_url = 'https://abramova.mastervision.su/mak-coach/';
+-var head_title = '«Сертифицированный тренер по Метафорическим Ассоциативным Картам»';
+//- -var head_description = '';
+-var head_img = 'img/banner.jpg';
+-var styles = 'css/styles.min.css';
+-var fav_ico = 'favicon.ico';
+-var fav_png = 'favicon.png';
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b(cl,href,taget,p)
+	a.button(class=cl href=href target=target)=p
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/main/1.main.pug
+		include pug/main/2.for.pug
+		include pug/main/3.plan-1.pug
+		include pug/main/3.plan-2.pug
+		include pug/main/4.learn.pug
+		include pug/main/5.prices.pug
+		include pug/main/6.coaches.pug
+		include pug/main/7.revs.pug
+		include pug/main/8.footer.pug
+		include pug/main/9.scripts.pug
+		include pug/scripts/callback
+		include pug/scripts/body_bottom_scripts
