@@ -1,17 +1,40 @@
-header
-	.container
-		a(href="https://mastervision.su", target="_blank")
-			img#logo(src="img/logo.png", alt="Логотип")
-		.contacts
-			a.contact.contact-tel(href="callto:8-929-568-87-50" target="_blank")
-				i.fa.fa-phone(aria-hidden="true")
-				span 8-929-568-87-50
-			a.contact.contact-tel(href="callto:8-499-346-79-46" target="_blank")
-				i.fa.fa-phone(aria-hidden="true")
-				span 8-499-346-79-46
-			a.contact.contact-skype(href="https://join.skype.com/invite/gkwrZmJPOtuf" target="_blank")
-				i.fa.fa-skype(aria-hidden="true")
-				span support-mastervision
-			a.contact.contact-email(href="mailto:info@mastervision.su" target="_blank")
-				i.fa.fa-envelope(aria-hidden="true")
-				span info@mastervision.su
+header 
+	padding 20px 0
+	background-color: rgba(#1d2050,.6)
+	overflow hidden
+#logo
+	display block
+	width 278px
+	height 20px
+	background-image url(../img/logo.png)
+	background-repeat no-repeat
+	background-position: center
+	background-size contain
+	float left
+.contacts
+	float: right
+	text-align: right
+.contact
+	line-height: 20px
+	color #fff
+	font-size: ML
+	margin-left: 20px
+	padding-left: 33px
+	background-repeat no-repeat
+	background-position: left center
+	background-size contain
+	&:focus
+		text-decoration: none
+		color #fff
+	&:hover
+		color #fff
+		text-decoration: underline
+	&-tel
+		background-image url(../img/icons/phone.png)
+		&:first-of-type
+			margin-left: 0
+	&-skype
+		background-image url(../img/icons/skype.png)
+	&-email
+		background-image url(../img/icons/envelope.png)
+		padding-left: 38px
