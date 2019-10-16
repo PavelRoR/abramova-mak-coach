@@ -36,7 +36,7 @@ $(document).ready(function () {
                 0: {
                     items: 1
                 },
-                481: {
+                768: {
                     items: 2
                 }
             }
